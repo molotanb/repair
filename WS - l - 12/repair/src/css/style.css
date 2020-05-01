@@ -22,7 +22,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -180,27 +180,6 @@ img {
   }
   .main-text {
     padding-right: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-text__title {
-    font-size: 24px;
-    line-height: 1.4;
-    margin-bottom: 15px;
-  }
-  .main-text__subtitle {
-    font-size: 16px;
-    margin-bottom: 28px;
-  }
-  .main-list__item {
-    margin-bottom: 20px;
-  }
-  .main-list__text {
-    font-size: 12px;
-  }
-  .main-list__image {
-    margin-right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
