@@ -1,10 +1,11 @@
 .main
     padding: 50px 0
+    background-color: $secondary
 
     &-block
         display: flex
     &-text 
-        flex-basis: 45%
+        flex-basis: 50%
         padding-right: 100px
 
         &__title
@@ -28,6 +29,9 @@
             display: flex
             align-items: center
             margin-bottom: 30px
+
+            &:last-child()
+                margin-bottom: 0
 
         &__image
             width: 40px
