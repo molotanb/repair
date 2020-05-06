@@ -123,10 +123,13 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .button:hover {
   background-color: #ffdb33;
+  cursor: pointer;
 }
 
 .section {
@@ -149,7 +152,7 @@ img {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
   border: 1px solid #dddddd;
-  padding: 26px;
+  padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -339,24 +342,83 @@ img {
 }
 
 /* Стили второго экрана главной страницы */
+.offer {
+  position: relative;
+}
+
+.offer::after {
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: url("../img/bcg-right-form.jpg") no-repeat;
+  background-size: 100%;
+  /** background-position: center right **/
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
 .offer-block {
   width: 50%;
   padding-right: 90px;
+  position: relative;
 }
 
 .offer__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
 }
 
 .offer__subtitle {
   display: inline-block;
   max-width: 250px;
+  margin-bottom: 30px;
 }
 
 .offer__input {
-  margin-right: 14px;
   margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer::after {
+    display: none;
+  }
+  .offer-block {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
