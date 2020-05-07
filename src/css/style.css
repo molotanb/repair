@@ -403,6 +403,28 @@ img {
   min-height: 70px;
 }
 
+.offer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.offer-info__time {
+  width: 47%;
+}
+
+.offer-info__phone-block {
+  padding-left: 70px;
+}
+
+.offer-info__phone {
+  display: block;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 @media (max-width: 1200px) {
   .offer__input {
     width: 100%;

@@ -1,5 +1,6 @@
 .offer
     position: relative
+    
     &::after
         content: ''
         width: 50%
@@ -48,6 +49,22 @@
         width: 100%
         min-height: 70px
 
+    &-info
+        display: flex
+        font-size: 15px
+        margin-top: 20px
+
+        &__time
+            width: 47%
+        
+        &__phone-block
+            padding-left: 70px
+        
+        &__phone
+            display: block
+            font-weight: 700
+            line-height: 24px
+
 @media ( max-width: 1200px)
     .offer
         &__input
@@ -62,6 +79,3 @@
             display: none
         &-block
             width: 100%
-
-            &-dfdfd
-            
