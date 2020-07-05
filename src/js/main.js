@@ -55,7 +55,6 @@ $(document).ready(function(){
 
     //Анимация//
 
- /*    $('#userName').delay(1000).animate({'width': '100%'}, 1000).delay(2000).animate({'width': '240px'}, 1000)
+    $('#userName').delay(1000).animate({'width': '100%'}, 1000).delay(2000).animate({'width': '240px'}, 1000)
     $('#userPhone').delay(1000).animate({'width': '100%'}, 1000).delay(2000).animate({'width': '240px'}, 1000)
-  */
 });
